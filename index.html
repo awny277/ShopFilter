@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>shop</title>
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/all.min.css">
+
+</head>
+
+<body>
+  <section class="search_cont">
+    <input type="text" placeholder="Search Field" class="searchInput" id="searchInput" />
+  </section>
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="filter_section">
+          <div class="Btn">
+            <button name="reset" onclick="myFunction()" id="reset">Reset</button>
+          </div>
+          <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                  aria-controls="panelsStayOpen-collapseOne">
+                  Categories
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="panelsStayOpen-headingOne">
+                <div class="accordion-body">
+                  <div class="fil_cont">
+                    <div>
+                      <input type="checkbox" id="shoes" value="shoes" class="checkFill" placeholder="shoes"  />
+                      <label for="shoes"> shoes</label>
+                    </div>
+                    <div>
+                      <input type="checkbox" id="shirt" value="shirt" class="checkFill" placeholder="shirts"  />
+                      <label for="shirt">shirt</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseTwo">
+                  Rating
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingTwo">
+                <div class="accordion-body">
+                  <div>
+                    <input type="checkbox" id="rate1" class="checkFill" value="1"  />
+                    <label for="rate1">
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="rate2" class="checkFill" value="2"  />
+                    <label for="rate2">
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="rate3" class="checkFill" value="3"  />
+                    <label for="rate3">
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="rate4" class="checkFill" value="4"  />
+                    <label for="rate4">
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-regular fa-star Normal_star"></i>
+                    </label>
+                  </div>
+                  <div>
+                    <input type="checkbox" id="rate5" class="checkFill" value="5"  />
+                    <label for="rate5">
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                      <i class="fa-solid fa-star active_star"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  aria-controls="panelsStayOpen-collapseThree">
+                  Price
+                </button>
+              </h2>
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                aria-labelledby="panelsStayOpen-headingThree">
+                <div class="accordion-body">
+                  <label for="customRange2" class="form-label">Example range</label>
+                  <input type="range" class="form-range" min="0" max="100" id="Range" onchange="RangeFilter()" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="container-fluid">
+          <div class="row " id="productsContainer">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </section>
+  <nav aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </nav>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
