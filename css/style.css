@@ -22,6 +22,11 @@ body {
   width: 40%;
 }
 .item {
+
+  margin: 5px 0;
+  /* width: 32.333333% !important; */
+}
+.contentDiv {
   background-color: var(--white);
   padding: 10px;
   border-radius: 10px;
@@ -29,12 +34,10 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  margin: 5px 0;
-  width: 32.333333% !important;
 }
 #productsContainer {
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .ProductImage {
   width: 100%;

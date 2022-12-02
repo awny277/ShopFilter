@@ -106,6 +106,8 @@ function addElement(appendIn, value) {
   // div.className = "item justify-self-center";
   let { image, name, type, price, rate, description } = value;
   let ProductDiv = document.createElement("div");
+  let contentDiv = document.createElement("div");
+  contentDiv.className = "contentDiv";
   ProductDiv.className = "col-md-4 item";
   ProductDiv.id = type;
   ProductDiv.setAttribute("rate", rate);
@@ -146,14 +148,15 @@ function addElement(appendIn, value) {
   Details.className = "Details";
   Details.href = "/";
   Details.textContent = "Details";
-  ProductDiv.appendChild(img);
-  ProductDiv.appendChild(ProName);
-  ProductDiv.appendChild(Protype);
-  ProductDiv.appendChild(Price);
-  ProductDiv.appendChild(Price);
-  ProductDiv.appendChild(StarDiv);
-  ProductDiv.appendChild(icon);
-  ProductDiv.appendChild(Details);
+  contentDiv.appendChild(img);
+  contentDiv.appendChild(ProName);
+  contentDiv.appendChild(Protype);
+  contentDiv.appendChild(Price);
+  contentDiv.appendChild(Price);
+  contentDiv.appendChild(StarDiv);
+  contentDiv.appendChild(icon);
+  contentDiv.appendChild(Details);
+  ProductDiv.appendChild(contentDiv);
   ProductsContainer.appendChild(ProductDiv);
   appendIn.appendChild(ProductDiv);
 }
