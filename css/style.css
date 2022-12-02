@@ -34,7 +34,7 @@ body {
 }
 #productsContainer {
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .ProductImage {
   width: 100%;
