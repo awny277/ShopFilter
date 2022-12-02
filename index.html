@@ -16,7 +16,7 @@
 
 <body>
   <section class="search_cont">
-    <input type="text" placeholder="Search Field" class="searchInput" id="searchInput" />
+    <input type="text" placeholder="Search Field" class="searchInput Fill" id="searchInput" />
   </section>
   <section class="container-fluid">
     <div class="row">
@@ -39,11 +39,11 @@
                 <div class="accordion-body">
                   <div class="fil_cont">
                     <div>
-                      <input type="checkbox" id="shoes" value="shoes" class="checkFill" placeholder="shoes"  />
+                      <input type="checkbox" id="shoes" value="shoes" class="Fill check" placeholder="shoes" />
                       <label for="shoes"> shoes</label>
                     </div>
                     <div>
-                      <input type="checkbox" id="shirt" value="shirt" class="checkFill" placeholder="shirts"  />
+                      <input type="checkbox" id="shirt" value="shirt" class="Fill check check" placeholder="shirts" />
                       <label for="shirt">shirt</label>
                     </div>
                   </div>
@@ -62,8 +62,8 @@
                 aria-labelledby="panelsStayOpen-headingTwo">
                 <div class="accordion-body">
                   <div>
-                    <input type="checkbox" id="rate1" class="checkFill" value="1"  />
-                    <label for="rate1">
+                    <input type="checkbox" id="1" class="Fill check" value="1" />
+                    <label for="1">
                       <i class="fa-solid fa-star active_star"></i>
                       <i class="fa-regular fa-star Normal_star"></i>
                       <i class="fa-regular fa-star Normal_star"></i>
@@ -72,8 +72,8 @@
                     </label>
                   </div>
                   <div>
-                    <input type="checkbox" id="rate2" class="checkFill" value="2"  />
-                    <label for="rate2">
+                    <input type="checkbox" id="2" class="Fill check" value="2" />
+                    <label for="2">
                       <i class="fa-solid fa-star active_star"></i>
                       <i class="fa-solid fa-star active_star"></i>
                       <i class="fa-regular fa-star Normal_star"></i>
@@ -82,8 +82,8 @@
                     </label>
                   </div>
                   <div>
-                    <input type="checkbox" id="rate3" class="checkFill" value="3"  />
-                    <label for="rate3">
+                    <input type="checkbox" id="3" class="Fill check" value="3" />
+                    <label for="3">
                       <i class="fa-solid fa-star active_star"></i>
                       <i class="fa-solid fa-star active_star"></i>
                       <i class="fa-solid fa-star active_star"></i>
@@ -92,8 +92,8 @@
                     </label>
                   </div>
                   <div>
-                    <input type="checkbox" id="rate4" class="checkFill" value="4"  />
-                    <label for="rate4">
+                    <input type="checkbox" id="4" class="Fill check" value="4" />
+                    <label for="4">
                       <i class="fa-solid fa-star active_star"></i>
                       <i class="fa-solid fa-star active_star"></i>
                       <i class="fa-solid fa-star active_star"></i>
@@ -102,8 +102,8 @@
                     </label>
                   </div>
                   <div>
-                    <input type="checkbox" id="rate5" class="checkFill" value="5"  />
-                    <label for="rate5">
+                    <input type="checkbox" id="5" class="Fill check" value="5" />
+                    <label for="5">
                       <i class="fa-solid fa-star active_star"></i>
                       <i class="fa-solid fa-star active_star"></i>
                       <i class="fa-solid fa-star active_star"></i>
@@ -126,7 +126,7 @@
                 aria-labelledby="panelsStayOpen-headingThree">
                 <div class="accordion-body">
                   <label for="customRange2" class="form-label">Example range</label>
-                  <input type="range" class="form-range" min="0" max="100" id="Range" onchange="RangeFilter()" />
+                  <input type="range" class="form-range Fill check" min="0" value="100" max="100" id="Range" />
                 </div>
               </div>
             </div>
@@ -140,18 +140,24 @@
         </div>
       </div>
     </div>
-
     </div>
   </section>
-  <nav aria-label="Page navigation example">
-    <ul class="pagination">
-      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-      <li class="page-item"><a class="page-link" href="#">1</a></li>
-      <li class="page-item"><a class="page-link" href="#">2</a></li>
-      <li class="page-item"><a class="page-link" href="#">3</a></li>
-      <li class="page-item"><a class="page-link" href="#">Next</a></li>
-    </ul>
-  </nav>
+  <section class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-2">
+        <nav aria-label="Page navigation example" class="pagenation_nav">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" id="btn_prev" onclick="prevPage(e)" href="/">&lt;</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" id="btn_next" onclick="nextPage(e)" href="/">&gt;</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>

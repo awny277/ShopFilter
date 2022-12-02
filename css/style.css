@@ -86,3 +86,7 @@ body {
 .hide {
   display:  none;
 }
+
+.pagenation_nav {
+  margin: 10px 0;
+}
