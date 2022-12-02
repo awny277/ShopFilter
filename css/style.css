@@ -29,7 +29,7 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
-  /* margin: 5px; */
+  margin: 5px 0;
   width: 32.333333% !important;
 }
 #productsContainer {
@@ -57,7 +57,7 @@ body {
 }
 .Details {
   text-decoration: none;
-  margin: 5px;
+  margin: 5px 0;
 }
 .filter_section .Btn {
   background-color: var(--white);

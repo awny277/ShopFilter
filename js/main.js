@@ -51,7 +51,7 @@ function filterProducts(e) {
           listCheckArr.includes(`${pro.id}`) ||
           listCheckArr.includes(`${pro.getAttribute("rate")}`)
         ) {
-          pro.style.display = "initial";
+          pro.style.display = "block";
         } else {
           pro.style.display = "none";
         }
@@ -68,7 +68,7 @@ function filterProducts(e) {
                 listCheckArr.includes(`${pro.id}`) &&
                 listCheckArr.includes(`${pro.getAttribute("rate")}`)
               ) {
-                pro.style.display = "initial";
+                pro.style.display = "block";
                 listCheckArr = listCheckArr.filter(
                   (ele) => ele !== e.target.value
                 );
@@ -90,7 +90,7 @@ function filterProducts(e) {
             listCheckArr = listCheckArr.filter((ele) => ele !== e.target.value);
           }
         } else {
-          pro.style.display = "initial";
+          pro.style.display = "block";
           listCheckArr = listCheckArr.filter((ele) => ele !== e.target.value);
         }
       }
